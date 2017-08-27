@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "任务-123",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskName": "任务-Broddsulan_Clock",
+      "appliesTo": "Broddsulan_Clock.csproj",
+      "type": "msbuild"
+    }
+  ]
+}

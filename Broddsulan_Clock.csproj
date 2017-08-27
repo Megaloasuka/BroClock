@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9ed65bb6-3386-4e44-a129-7d58dbddd95a</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Broddsulan_Clock</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Broddsulan_Clock\AdvancedButton.cs" />
+    <Compile Include="Broddsulan_Clock\AdvancedTextbox.cs" />
+    <Compile Include="Broddsulan_Clock\Config.cs" />
+    <Compile Include="Broddsulan_Clock\ConsoleHint.cs" />
+    <Compile Include="Broddsulan_Clock\ConsoleLayOut.cs" />
+    <Compile Include="Broddsulan_Clock\ConsoleTitle.cs" />
+    <Compile Include="Broddsulan_Clock\Console_Topic.cs" />
+    <Compile Include="Broddsulan_Clock\Ctrl_Description.cs" />
+    <Compile Include="Broddsulan_Clock\DelRollCallLabel.cs" />
+    <Compile Include="Broddsulan_Clock\Form_Main.cs" />
+    <Compile Include="Broddsulan_Clock\My\MyApplication.cs" />
+    <Compile Include="Broddsulan_Clock\My\Resources\Resources.cs" />
+    <Compile Include="Broddsulan_Clock\My\MySettings.cs" />
+    <Compile Include="Broddsulan_Clock\My\MyComputer.cs" />
+    <Compile Include="Broddsulan_Clock\My\MyProject.cs" />
+    <Compile Include="Broddsulan_Clock\Sidebar.cs" />
+    <Compile Include="Broddsulan_Clock\SidebarButton.cs" />
+    <Compile Include="Broddsulan_Clock\Ctrl_Timer.cs" />
+    <Compile Include="Broddsulan_Clock\Page_Timer.cs" />
+    <Compile Include="Broddsulan_Clock\Console_Timer.cs" />
+    <EmbeddedResource Include="Broddsulan_Clock.DelRollCallLabel.resources" />
+    <EmbeddedResource Include="Broddsulan_Clock.Form_Main.resources" />
+    <EmbeddedResource Include="Broddsulan_Clock.Resources.resources" />
+    <EmbeddedResource Include="Broddsulan_Clock.Sidebar.resources" />
+    <EmbeddedResource Include="Broddsulan_Clock.SidebarButton.resources" />
+    <EmbeddedResource Include="Broddsulan_Clock.Ctrl_Timer.resources" />
+  </ItemGroup>
+</Project>
